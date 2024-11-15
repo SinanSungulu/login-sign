@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    width: 100vw;
+     height: 100vh;
+     background-color: #e1eafa;
+}
+#main-container {
+    overflow:hidden;
+
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 5px solid transparent;
+
+    border-image-source: linear-gradient(to top left,#0f1729,#012c45,#032e50,#293e6ddc,#0f1729,#0202a1);
+    border-image-slice: 100 fill;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+    box-shadow: -2px 13px 31px #0f1729;
+
+    padding: 30px;
+}
+
+img {
+    
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 400ms;
+    transition-delay: 10ms;
+
+}
+#left
+{
+    width: 400px;
+    height: 600px;
+}
+#img-box {
+    position: relative;
+    width: 351px;
+    height: 100%;
+}
+
+#img-box:hover img {
+    transform: rotate(-20deg,-29);
+    width: 200%;
+    height: 100%;
+    opacity: 0.88;
+    box-shadow: 5px 5px 2px  #0f1729;
+
+}
+#img-box:hover p {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:200%;
+
+    text-shadow: 5px 5px 2px  #0f1729;
+    font-size: 1.3rem;
+    color: #ddd8cc;
+}
+#img-p {
+    position: relative;
+    z-index: 2;
+    display: none;
+    transition: all 500ms;
+}
+
+/* left end */
+
+/* :right */
+#right {
+    width: 50%;
+    height: 100%;
+    border: 2px solid ;
+    border-image-source: linear-gradient(to left, #0f1729,#334a80);
+
+    border-image-slice: 100;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+#right-header {
+    padding: 0 0 20px 0;
+    color: #e1eafa;
+}
+#right-header h1 {
+    padding: 0 0 10px 0;
+    font-size: 3rem;
+    color: currentColor;
+}
+#right-header h1 + p {
+    color: currentColor;
+}
+#btn {
+    display: block;
+    width: 100%;
+
+}
+#btn button {
+    width: 60%;
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    color: #e1eafa;
+    font-size: 1.1rem;
+    border: 2px solid aliceblue;
+    margin-bottom: 10px;
+
+}
+
+#right-middle-cnt{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#right-middle-cnt label {
+    padding: 10px;
+    position: relative;
+    left: 30px;
+    color: #e6ebf8;
+    font-size: 1.2rem;
+}
+#right-middle-cnt input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    outline: navajowhite;
+    transition: all 300ms;
+}
+#right-middle-cnt input:focus {
+    background-color: #0f17298e;
+    color: #e1eafa;
+}
+#right-footer {
+    color: #e6ebf8;
+}
+#right-footer label {
+    display: block;
+    height: 50%;
+    padding-top: 30px;
+    font-size: 1.3rem;
+    color: #e6ebf8;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+#right-footer a {
+    color: currentColor;
+}
+
+/* :right */
